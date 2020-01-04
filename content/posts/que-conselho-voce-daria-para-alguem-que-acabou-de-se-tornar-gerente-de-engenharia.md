@@ -19,7 +19,7 @@ E eu respondi:
 
 ## No final do dia, as pessoas são tudo
 
-E tudo vai girar em torno delas. A partir desse momento, você vai ter que lidar com Pessoas Engenheiras de Software e com isso vem todos os problemas de comunicação que isso pode gerar:
+Tudo vai girar em torno delas. A partir desse momento, você vai ter que lidar com Pessoas Engenheiras de Software e com isso vem todos os desafios de comunicação que podem acontecer:
 
 - uma frase mal colocada e mal interpretada;
 - uma frustação salarial não resolvida;
