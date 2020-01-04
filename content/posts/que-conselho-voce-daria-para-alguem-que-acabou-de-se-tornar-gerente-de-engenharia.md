@@ -1,10 +1,10 @@
 +++
 title = "Que conselho você daria para alguém que acabou de se tornar gerente de engenharia (times de desenvolvimento de software)?"
-date = "2019-12-22"
+date = "2020-01-04"
 author = "Cairo Noleto"
 cover = ""
-tags = []
-keywords = []
+tags = ["líder técnico", "soft skills", "technical leader", "tech leader", "gerente de engenharia", "engineer manager"]
+keywords = ["líder técnico", "soft skills", "technical leader", "tech leader", "gerente de engenharia", "engineer manager"]
 description = ""
 showFullContent = false
 +++
