@@ -70,13 +70,13 @@ Você vai guiar, vai pensar em como o time vai continuar aprendendo e aplicando 
 
 Como seu trabalho é cuidar das pessoas, aumentar o time também faz parte, e você precisa fazer isso de forma certa. Gaste muito tempo pensando no melhor processo seletivo e em como evitar vieses, ser mais inclusivo e assertivo nas contratações.
 
-Um time diverso consegue olhar de formas diversas para um mesmo problema e isso aumenta as chances de que o trabalho seja feito com maior qualidade. Mas, para contratar com diversidade, é preciso ser intencional, então: 
+Um time diverso consegue olhar de formas diversas para um mesmo problema e isso aumenta as chances de que o trabalho seja feito com maior qualidade. Mas, para contratar com diversidade, é preciso ser intencional, então:
 
 - escreva descrições de vaga com uma linguagem inclusiva
 - garanta que existam pessoas diversas participando do processo seletivo
-- garanta que todas as pessoas que participam do processo seletivo estejam informadas sobre os possíveis vieses inconscientes  
+- garanta que todas as pessoas que participam do processo seletivo estejam informadas sobre os possíveis vieses inconscientes
 
-Você não precisa baixar a sua barra de qualidade para contratar pessoas diversas. Dado que nem todas as pessoas tiveram as mesmas oportunidades, é seu papel entender como fazer com que seu processo selecione pessoas extremamente talentosas, mas que não tiveram os mesmos privilégios e oportunidades. 
+Você não precisa baixar a sua barra de qualidade para contratar pessoas diversas. Dado que nem todas as pessoas tiveram as mesmas oportunidades, é seu papel entender como fazer com que seu processo selecione pessoas extremamente talentosas, mas que não tiveram os mesmos privilégios e oportunidades.
 
 ## Uma dica que não estava no tweet!
 
@@ -87,3 +87,7 @@ Mas está em um outro tweet meu, mais recente:
 Essa frase é do livro [High Output Management](https://www.amazon.com.br/Output-Management-English-Andrew-Grove-ebook/dp/B015VACHOK/ref=asc_df_B015VACHOK/?tag=googleshopp00-20&linkCode=df0&hvadid=379725685153&hvpos=1o2&hvnetw=g&hvrand=16566403399515502424&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001629&hvtargid=pla-1004441367512&psc=1), do Andrew Grove, ex CEO e Chairman da Intel e ele resume muito bem em uma frase o que é o trabalho de desenvolvimento de software: um trabalho em conjunto, de equipe.
 
 A partir de agora, seu trabalho vai ser o de **técnico**. Você precisa _inspirar_ o melhor do seu time para todas as pessoas terem sucesso! Desenvolvimento de software é um trabalho coletivo, em que cada integrante do time precisa estar no seu melhor, assim como em qualquer [esporte coletivo](https://www.linkedin.com/pulse/desenvolvimento-de-software-%C3%A9-um-esporte-coletivo-jo%C3%A3o-daniel-duarte/).
+
+## Agradecimentos
+
+Obrigado para [Ana Cardoso](https://www.linkedin.com/in/cardosoanacp/), [Betina Ribeiro](https://www.linkedin.com/in/betinaribeiro/), [Lucas Ferraz](https://www.linkedin.com/in/lucas-cassiano-ferraz-paolillo/) e [João Daniel](https://www.linkedin.com/in/jdanielnd/) que [revisaram o texto](https://github.com/caironoleto/caironoleto.dev/pull/1)!
