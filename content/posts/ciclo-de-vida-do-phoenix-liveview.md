@@ -8,11 +8,11 @@ keywords = ["elixir", "phoenix", "phoenix liveview", "myelixirstatus"]
 showFullContent = false
 +++
 
-Para quem não conhece, o [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) é uma biblioteca que funciona em cima do [Phoenix](https://www.phoenixframework.org/), framework web feito para [Elixir](https://elixir-lang.org/), e que trás todo o poder de se criar aplicações ricas em tempo real, tudo isso via server side e renderizando HTML.
+Para quem não conhece, o [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) é uma biblioteca que funciona em cima do [Phoenix](https://www.phoenixframework.org/), framework web feito para [Elixir](https://elixir-lang.org/), e que traz todo o poder de criar aplicações ricas em tempo real, tudo isso via server side e renderizando HTML.
 
-A biblioteca usa todo o poder que Elixir trouxe de websockets e comunicação em tempo real para fazer com que sua página pareça uma aplicação sendo controlada pelo framework JavaScript da moda, mas que no final é só HTML + CSS e back-end.
+A biblioteca usa todo o poder que o Elixir trouxe de websockets e comunicação em tempo real para fazer com que sua página pareça uma aplicação sendo controlada pelo framework JavaScript da moda, mas que no final é só HTML + CSS e back-end.
 
-Antes de começarmos, eu espero que você já tenha seguido o [guia de instalação](https://hexdocs.pm/phoenix_live_view/installation.html) e que já tenha se familiarizado um pouco com LiveView. Recomendo ler os links antes de avançar.
+Antes de começarmos, espero que você já tenha seguido o [guia de instalação](https://hexdocs.pm/phoenix_live_view/installation.html) e que já tenha se familiarizado um pouco com LiveView. Recomendo ler os links antes de avançar.
 
 ## Entendendo mais o ciclo de vida do Phoenix LiveView
 
@@ -39,27 +39,29 @@ end
 
 O ciclo de vida começa na função `mount/3`. Quando você acessa a rota de qualquer LiveView, é essa função
 que é executada. Ela recebe os parâmetros que vem do controller, a sessão atual e o LiveView socket.
-A sessão são dados privados que é setado pela aplicação, geralmente no controller, quando chama o LiveView.
+A sessão são dados privados definidos pela aplicação, geralmente no controller, quando ela chama o LiveView.
 
-É na função `mount/3` que você inicializa a sua LiveView, setando todas as variáveis que você vai
-precisar no seu template.
+É na função `mount/3` que você inicializa a sua LiveView, definindo todas as variáveis que você vai
+precisar no seu _template_.
 
-Após isso, a função `render/1` é chamada e o HTML é devolvido, como qualquer resposta HTML que é feita pelo
-Phoenix.
+Após isso, a função `render/1` é chamada e o HTML é devolvido, como qualquer resposta HTML feita pelo Phoenix.
 
-Após a página HTML ser renderizada, o LiveView conecta com o socket, que mais uma vez chama o `mount/3` da
-view, assim ficando conectado e "de olho" em qualquer evento feito pelo browser.
+Após a _renderização_ da página HTML, o LiveView se conecta com o _socket_, que mais uma vez chama a função `mount/3` da view, ficando conectado e "de olho" em qualquer evento feito pelo navegador.
 
-Quando acontece qualquer evento, ele manda para a LiveView usando a função `handle_event/3`, que vou detalhar
+
+Quando acontece qualquer evento na página, o _socket_ envia esse evento para a LiveView usando a função `handle_event/3`, que vou detalhar
 nos próximos parágrafos.
 
 De uma forma simplista, é assim que funciona o ciclo de vida do Phoenix LiveView.
 
 ## Aconteceu um evento, o que acontece?
 
-O Phoenix LiveView tem um código JavaScript que fica rodando no browser e envia todos os eventos através
-do websocket para o back-end. Ele faz uma chamada pra função `handle_event/3`, passando três parêmetros
-que é o nome do evento, os parâmetros que acompanham aquele evento e o socket.
+O Phoenix LiveView tem um código JavaScript que fica rodando no _browser_ e envia todos os eventos através
+do websocket para o back-end. O _socket_ faz uma chamada pra função `handle_event/3`, passando três parâmetros
+que são: o nome do evento, os parâmetros que acompanham aquele evento e o próprio _socket_.
+Nesse código, eu declarei a `handle_event/3` duas vezes, uma para tratar o evento `validate` e outra para tratar o `save`.
+São essas funções que você vai usar para interagir com a página HTML. Foi essa parte que mais estourou
+minha cabeça 🤯
 
 ```elixir
 defmodule MyApp.RegisterView do
@@ -85,11 +87,6 @@ defmodule MyApp.RegisterView do
   end
 # ...
 end
-```
-
-Nesse código eu declarei duas funções `handle_event/3`, que vai tratar o evento `validate` e o `save`.
-São essas funções que você vai usar para interagir com a página HTML. Foi essa parte que mais estourou
-minha cabeça 🤯
 
 Demorou um pouco pra cair a ficha de que **tudo** é um _"template normal"_ do Phoenix. Isso significa que a
 interação com a página se dá pelo velho e guerreiro `if/else` + combinações de `handle_event/3`.
@@ -99,12 +96,12 @@ Um exemplo bem legal é [esse aqui](https://github.com/tuacker/phoenix_live_view
 do Phoenix, onde já podemos criar uma nova aplicação Phoenix incluindo o Phoenix LiveView
 (`mix phx.new path --live`).
 
-Nesse exemplo, é implementado um formulário com 3 passos e ao final "salva" no banco de dados. O código
+Nesse exemplo, um formulário com 3 passos é implementado e no final as informações são "salvas" no banco de dados. O código
 na view são vários `if/else`s e o controle do que é visto é feito na LiveView, usando a função `handle_event/3`
 para cada passo desse formulário.
 
 Aqui eu deixo o código do template para que você veja os vários `if/else`s (a organização disso entra em um
-segundo post!) e também o código da LiveView, com todas as funções que manipulam esse template.
+segundo post!) e também o código da LiveView com todas as funções que manipulam esse template.
 
 <details>
 <summary>Aqui é o código da view leex</summary>
