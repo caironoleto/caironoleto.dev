@@ -87,6 +87,7 @@ defmodule MyApp.RegisterView do
   end
 # ...
 end
+```
 
 Demorou um pouco pra cair a ficha de que **tudo** é um _"template normal"_ do Phoenix. Isso significa que a
 interação com a página se dá pelo velho e guerreiro `if/else` + combinações de `handle_event/3`.
