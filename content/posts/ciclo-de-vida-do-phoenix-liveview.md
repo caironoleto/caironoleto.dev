@@ -6,6 +6,7 @@ cover = ""
 tags = ["elixir", "phoenix", "phoenix liveview", "myelixirstatus"]
 keywords = ["elixir", "phoenix", "phoenix liveview", "myelixirstatus"]
 showFullContent = false
+description="Para quem não conhece, o [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) é uma biblioteca que funciona em cima do [Phoenix](https://www.phoenixframework.org/), framework web feito para [Elixir](https://elixir-lang.org/), e que traz todo o poder de criar aplicações ricas em tempo real, tudo isso via server side e renderizando HTML. Nesse post vou falar mais sobre o Ciclo de vida do Phoenix LiveView e explicar como ele funciona."
 +++
 
 Texto originalmente publicado no Blog da Trybe: https://blog.betrybe.com/txn-avancado/ciclo-de-vida-phoenix-liveview/
