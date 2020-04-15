@@ -8,6 +8,8 @@ keywords = ["elixir", "phoenix", "phoenix liveview", "myelixirstatus"]
 showFullContent = false
 +++
 
+Texto originalmente publicado no Blog da Trybe: https://blog.betrybe.com/txn-avancado/ciclo-de-vida-phoenix-liveview/
+
 Para quem não conhece, o [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view) é uma biblioteca que funciona em cima do [Phoenix](https://www.phoenixframework.org/), framework web feito para [Elixir](https://elixir-lang.org/), e que traz todo o poder de criar aplicações ricas em tempo real, tudo isso via server side e renderizando HTML.
 
 A biblioteca usa todo o poder que o Elixir trouxe de websockets e comunicação em tempo real para fazer com que sua página pareça uma aplicação sendo controlada pelo framework JavaScript da moda, mas que no final é só HTML + CSS e back-end.
